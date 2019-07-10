@@ -34,6 +34,12 @@ class HomeViewController: UIViewController {
         self.present(settingViewController, animated: true, completion: nil)
     }
     
-
+    @objc func goToMap() {
+        // push to map view controller
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let mapViewController = storyBoard.instantiateViewController(withIdentifier: "MapViewController")
+        self.present(mapViewController, animated: true, completion: nil)
+        
+    }
 }
 
